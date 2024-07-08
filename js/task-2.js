@@ -1,3 +1,11 @@
+function formatMessage(message, maxLenght) {
+  if (message.lenght <= maxLenght) {
+    return message;
+  } else {
+    return message.slice(0, maxLenght) + '...';
+  }
+}
+
 console.log(formatMessage('Curabitur ligula sapien', 16)); // "Curabitur ligula..."
 console.log(formatMessage('Curabitur ligula sapien', 23)); // "Curabitur ligula sapien"
 console.log(formatMessage('Vestibulum facilisis purus nec', 20)); // "Vestibulum facilisis..."
