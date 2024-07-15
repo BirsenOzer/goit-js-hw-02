@@ -1,8 +1,8 @@
-function formatMessage(message, Length) {
-  if (message.Length <= Length) {
+function formatMessage(message, maxLength) {
+  if (message.length <= maxLength) {
     return message;
   } else {
-    return message.slice(0, Length) + '...';
+    return message.slice(0, maxLength) + '...';
   }
 }
 
